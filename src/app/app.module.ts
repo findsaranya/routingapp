@@ -22,7 +22,7 @@ const appRoutes:Routes = [
     component:UsersComponent
   },
   {
-    path:"user/:id",
+    path:"user/:id/:name",
     component:UserComponent
   },
   {
