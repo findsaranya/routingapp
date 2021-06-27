@@ -4,7 +4,7 @@
       <ul class="nav nav-tabs">
         <li role="presentation" class="nav-item" ><a class="nav-link" routerLink="/"
            routerLinkActive="active" 
-           routeLinkActiveOptions="{exact:true}" >Home</a></li>
+           [routerLinkActiveOptions]="{exact:true}" >Home</a></li>
         <li role="presentation" class="nav-item"><a class="nav-link" [routerLink]="'servers'" routerLinkActive="active">Servers</a></li>
         <li role="presentation" class="nav-item"><a [routerLink]="['users']" class="nav-link" routerLinkActive="active">Users</a></li>
       </ul>
