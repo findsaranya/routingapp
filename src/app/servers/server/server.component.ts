@@ -30,7 +30,7 @@ export class ServerComponent implements OnInit {
   }
   onEditUser(id:number){
     console.log("server id",id);
-    this.router.navigate(['edit'],{relativeTo:this.route})
+    this.router.navigate(['edit'],{relativeTo:this.route,queryParamsHandling:'merge'})
   }
 
 }
