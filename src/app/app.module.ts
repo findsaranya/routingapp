@@ -19,11 +19,11 @@ const appRoutes:Routes = [
   },
   {
     path:"users",
-    component:UserComponent
+    component:UsersComponent
   },
   {
     path:"servers",
-    component:ServerComponent
+    component:ServersComponent
   }
 ];
 @NgModule({
