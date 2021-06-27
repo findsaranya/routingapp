@@ -12,9 +12,11 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
   }
-  onLoadServers(){
+  onLoadServers(id:number){
     console.log("btn clicked");
-    this.route.navigate(['/servers']);
+    this.route.navigate(['/servers',id,'edit'],{queryParams:{allowEdit:'yes',notEdit:false},
+  fragment:'loading'
+  });
   }
 
 }
