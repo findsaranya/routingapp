@@ -19,24 +19,30 @@ const appRoutes:Routes = [
   },
   {
     path:"users",
-    component:UsersComponent
-  },
-  {
-    path:"users/:id/:name",
+    component:UsersComponent,
+    children:[
+        {
+    path:":id/:name",
     component:UserComponent
   },
+    ]
+  },
+ 
   {
     path:"servers",
-    component:ServersComponent
-  },
-  {
-    path:"servers/:id",
+    component:ServersComponent,
+    children:[
+        {
+    path:":id",
     component:ServerComponent
   },
   {
-    path:"servers/:id/edit",
+    path:":id/edit",
     component:EditServerComponent
   }
+    ]
+  },
+  
 ];
 @NgModule({
   declarations: [
