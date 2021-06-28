@@ -44,12 +44,17 @@ const appRoutes:Routes = [
     ]
   },
   {
-    path : "something",
+    path : "not-found",
     component:PageNotFoundComponent
-  }
+  },
   {
-    path:'not-found',
-    redirectTo:'something'
+    path : "",
+    redirectTo:'not-found',
+    pathMatch:'full'
+  },
+  {
+    path:'**',
+    redirectTo:'not-found'
   }
 ];
 @NgModule({
