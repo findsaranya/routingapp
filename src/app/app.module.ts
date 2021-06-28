@@ -43,7 +43,14 @@ const appRoutes:Routes = [
   }
     ]
   },
-  
+  {
+    path : "something",
+    component:PageNotFoundComponent
+  }
+  {
+    path:'not-found',
+    redirectTo:'something'
+  }
 ];
 @NgModule({
   declarations: [
